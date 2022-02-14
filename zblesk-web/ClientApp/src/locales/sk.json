@@ -1,0 +1,33 @@
+{
+  "general": {
+    "greeting": "Ahoj"
+  },
+	"menus": {
+    "add": "Pridať",
+    "admin": "Admin",
+    "cancel": "Zrušiť",
+    "create": "Vytvoriť",
+    "discardChanges": "Zahodiť zmeny",
+    "email": "E-mail",
+    "forgottenPwd": "Zabudnuté heslo",
+    "hide": "Skryť",
+    "home": "Domov",
+    "login-register": "Prihlásiť/Registrovať",
+    "login": "Prihlásiť",
+    "logout": "Odhlásiť",
+    "password": "Heslo",
+    "register": "Zaregistrovat",
+    "reset": "Reset",
+    "save": "Uložiť"
+  },
+  "user": {
+    "noneAvailable": "Žiaden",
+    "selectPreferredLanguage": "Vyber preferovaný jazyk",
+    "language": "Jazyková verzia webu"
+  },
+  "messages": {
+	  "langChangeSuccess": "Jazyk zmenený",
+	  "loginFailed": "Login zlyhal",
+	  "welcome": "Vitaj"
+  }
+}

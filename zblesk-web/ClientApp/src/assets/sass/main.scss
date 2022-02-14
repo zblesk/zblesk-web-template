@@ -1,0 +1,17 @@
+/* Custom Variables and Functions*/
+@import 'variables';
+
+/* Uncomment to import the entire Bulma framework */
+@import '~bulma/bulma';
+
+/* Use these if you only want to import selected Bulma parts (and comment out the line above)*/
+/*
+@import "~bulma/sass/utilities/_all.sass";
+@import "~bulma/sass/base/_all.sass";
+@import "~bulma/sass/grid/_all.sass";
+@import "~bulma/sass/elements/button.sass";
+@import "~bulma/sass/elements/container.sass";
+@import "~bulma/sass/elements/title.sass";
+@import "~bulma/sass/layout/section.sass";
+@import "~bulma/sass/components/card.sass";
+*/

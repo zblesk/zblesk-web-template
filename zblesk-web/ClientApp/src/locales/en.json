@@ -1,0 +1,33 @@
+{
+  "general": {
+    "greeting": "Hello"
+  },
+	"menus": {
+		"add": "Add",
+		"admin": "Admin",
+		"cancel": "Cancel",
+		"create": "Create",
+		"discardChanges": "Discard changes",
+		"email": "Email",
+		"forgottenPwd": "Forgotten password",
+		"hide": "Hide",
+		"home": "Home",
+		"login-register": "Login",
+		"login": "Login/Register",
+		"logout": "Logout",
+		"password": "Password",
+		"register": "Register",
+		"reset": "Reset",
+		"save": "Save"
+  },
+  "user": {
+    "noneAvailable": "None",
+	"language": "Language settings",
+	"selectPreferredLanguage": "Choose language"
+  },
+  "messages": {
+	  "langChangeSuccess": "Language changed successfully",
+	  "loginFailed": "Login failed",
+	  "welcome": "Welcome back"
+  }
+}
