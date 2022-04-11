@@ -51,10 +51,17 @@ public class AccountController : Controller
     [HttpPost("register")]
     public async Task<IActionResult> Register([FromBody] LoginCredentials creds)
     {
-        var user = await _users.Register(creds);
-        if (user != null)
+        try
         {
-            return Json(UserInfo.From(user));
+            var user = await _users.Register(creds);
+            if (user != null)
+            {
+                return Json(UserInfo.From(user));
+            }
+        }
+        catch (Exception ex)
+        {
+            return ValidationProblem("Registration failed: " + ex.Message);
         }
         return ValidationProblem("Registration failed");
     }

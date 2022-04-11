@@ -31,29 +31,29 @@
 </template>
 
 <script>
-    import axios from 'axios'
-    export default {
-        name: "FetchData",
-        data() {
-            return {
-                forecasts: []
-            }
-        },
-        methods: {
-            getWeatherForecasts() {
-                 axios.get('/weatherforecast')
-                     .then((response) => {
-                        this.forecasts =  response.data;
-                    })
-                    .catch(function (error) {
-                        alert(error);
-                     });
-            }
-        },
-        mounted() {
-            this.getWeatherForecasts();
+import axios from 'axios'
+export default {
+    name: "FetchData",
+    data() {
+        return {
+            forecasts: []
         }
+    },
+    methods: {
+        getWeatherForecasts() {
+                axios.get('/weatherforecast')
+                    .then((response) => {
+                    this.forecasts =  response.data;
+                })
+                .catch(function (error) {
+                    alert(error);
+                    });
+        }
+    },
+    mounted() {
+        this.getWeatherForecasts();
     }
+}
 </script>
 
 <!--Scoped Sass-->

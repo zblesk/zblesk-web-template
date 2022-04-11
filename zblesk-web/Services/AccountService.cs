@@ -66,7 +66,7 @@ public class AccountService
             }
             return user;
         }
-        return null;
+        throw new InvalidOperationException(result.Errors.FirstOrDefault().Description);
     }
 
     public async Task<bool> ValidateLogin(LoginCredentials creds)
