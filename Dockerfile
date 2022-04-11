@@ -23,7 +23,7 @@ RUN npm run build -- --prod
 FROM mcr.microsoft.com/dotnet/aspnet:6.0-alpine-amd64
 WORKDIR /zblesk-web
 COPY --from=dotnetbuild /app ./
-COPY --from=nodebuild /frontend/dist ./ClientApp
+COPY --from=nodebuild /frontend/dist ./ClientApp/dist
 
 ENV \
     DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false \
