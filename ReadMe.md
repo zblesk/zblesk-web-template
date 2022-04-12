@@ -60,7 +60,7 @@ These parts are already set up and should just work:
 - **Mailgun mailer** 
   - with a fake mailer service that's turned on in the config by default - which just logs any sent emails to the log sink 
 - **Backup service** that periodically make a snapshot of your SQLite DB
-- **Docker** file included. Build and run easily.
+- **Docker** file included. Based on **Alpine**. Build and run easily.
 - **Drone** config also included; just fill in the credentials and Drone will build and publish to Docker Hub. Look, it even has a badge. [![Build Status](https://bzzz.zble.sk/api/badges/zblesk/zblesk-web-template/status.svg)](https://bzzz.zble.sk/zblesk/zblesk-web-template)
 
 # Building
