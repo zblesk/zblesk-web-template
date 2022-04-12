@@ -63,6 +63,16 @@ These parts are already set up and should just work:
 - **Docker** file included. Based on **Alpine**. Build and run easily.
 - **Drone** config also included; just fill in the credentials and Drone will build and publish to Docker Hub. Look, it even has a badge. [![Build Status](https://bzzz.zble.sk/api/badges/zblesk/zblesk-web-template/status.svg)](https://bzzz.zble.sk/zblesk/zblesk-web-template)
 
+# Check it out
+
+If you want to take a look without bothering with a build, you can do a
+
+```bash
+docker run --rm -p 8080:8080 zblesk/zblesk-web-template
+```
+
+Then browse to http://localhost:8080/ .
+
 # Building
 
 It's a standard .net project. If you open it in Visual Studio 2022, all you need to do should be to hit 'run'. 
